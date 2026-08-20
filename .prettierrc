@@ -1,0 +1,43 @@
+{
+  "endOfLine": "lf",
+  "semi": false,
+  "singleQuote": false,
+  "tabWidth": 2,
+  "trailingComma": "es5",
+  "printWidth": 80,
+  "plugins": [
+    "@ianvs/prettier-plugin-sort-imports",
+    "prettier-plugin-tailwindcss"
+  ],
+  "tailwindStylesheet": "./app/globals.css",
+  "tailwindFunctions": ["cn", "cva"],
+  "importOrder": [
+    "<BUILTIN_MODULES>",
+    "",
+    "^(react/(.*)$)|^(react$)",
+    "^(next/(.*)$)|^(next$)",
+    "",
+    "<THIRD_PARTY_MODULES>",
+    "",
+    "^@/lib/(.*)$",
+    "^@/hooks/(.*)$",
+    "^@/components/ui/(.*)$",
+    "^@/components/(.*)$",
+    "^@/(.*)$",
+    "",
+    "^[./]"
+  ],
+  "importOrderParserPlugins": ["typescript", "jsx", "decorators-legacy"],
+  "importOrderTypeScriptVersion": "5.0.0",
+  "importOrderCaseSensitive": false,
+  "overrides": [
+    {
+      "files": "*.md",
+      "options": { "proseWrap": "preserve" }
+    },
+    {
+      "files": "*.json",
+      "options": { "printWidth": 120 }
+    }
+  ]
+}
