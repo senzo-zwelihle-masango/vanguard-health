@@ -29,7 +29,6 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       suppressHydrationWarning
       className={cn(
-        "h-full",
         "antialiased",
         geistSans.variable,
         geistMono.variable,
